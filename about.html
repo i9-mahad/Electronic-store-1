@@ -3,263 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electro</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us | TechStore</title>
+    <meta name="description" content="Learn about TechStore's journey, mission, team of tech experts, and high quality electronic device repair and distribution services.">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- About CSS (inherits Master style.css) -->
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
     
-    <!-- header -->
-
-  <!-- header -->
-
     <!-- MAIN HEADER SECTION -->
-<header class="site-header">
-    <div class="container header-wrapper">
-        
-        <!-- Logo -->
-        <div class="logo">
-            <a href="#">Tech<span>Store</span></a>
-        </div>
-
-        <!-- Navigation Menu -->
-        <nav class="main-nav">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="about.html"  class="active">About</a></li>
-            </ul>
-        </nav>
-
-        <!-- Search and Cart Area -->
-        <div class="header-actions">
-            <div class="search-bar">
-                <input type="text" placeholder="Search products...">
-                <button type="submit" class="search-btn">🔍</button>
-            </div>
+    <header class="site-header">
+        <div class="container header-wrapper">
             
-            <a href="#" class="cart-icon">
-                <span class="icon">🛒</span>
-                <span class="cart-count">0</span>
-            </a>
+            <div class="logo">
+                <a href="index.html">Tech<span>Store</span></a>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." aria-label="Search products">
+                    <button type="button" class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                
+                <a href="#" class="cart-icon" id="openCartBtn" aria-label="View Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
         </div>
+    </header>
 
-    </div>
-</header>
-
-    <!-- section-1 -->
-
-   <section class="hero-section">
-        <div class="hero-content">
-            <h1>Learn About Us</h1>
-           <p>We are a creative team dedicated to making your life easier through modern and high-quality technology solutions.</p>
+    <!-- HERO BANNER SECTION -->
+    <section class="about-hero-section">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1>Learn About Us</h1>
+                <p>We are a creative team dedicated to making your life easier through modern and high-quality technology solutions.</p>
+            </div>
         </div>
     </section>
 
-    <!-- who we are -->
-     
-<section class="who-we-are">
-    <div class="container">
-        <div class="about-flex">
-            <!-- Dhanka Qoraalka -->
-            <div class="about-text">
-                <h2>Who We are?</h2>
-                <p>We are a team of experts specialized in delivering and installing high-quality electronic devices. Our mission is to connect modern technology with your everyday life.</p>
-
-                <p>Since our beginning, we have served thousands of customers with products such as laptops, smartwatches, and smart home systems.
-</p>
-            </div>
-            <!-- Dhanka Sawirka -->
-            <div class="about-image">
-                <img src="https://i.pinimg.com/1200x/ae/a9/e7/aea9e76631b1295a50d916dccccffa60.jpg" alt="Kooxdayada shaqada">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Qaybta Mission iyo Vision -->
-<section class="mission-vision">
-    <div class="container">
-        <div class="cards-wrapper">
-            <!-- Card-ka Mission-ka -->
-            <div class="card">
-                <div class="icon">🚀</div>
-                <h3>Mission</h3>
-                <p>To provide our customers with top-quality electronic products while ensuring excellent service, affordable prices, and customer satisfaction.</p>
-            </div>
-
-            <!-- Card-ka Vision-ka -->
-            <div class="card">
-                <div class="icon">👁️</div>
-                <h3>Our Vision</h3>
-                <p>To become the leading technology destination for communities by driving innovation and making modern life easier through technology.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Qaybta Our Story -->
-<section class="our-story">
-    <div class="container">
-        <div class="story-wrapper">
-            <!-- Dhanka Sawirka -->
-            <div class="story-image">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Safarkayaga">
-            </div>
-            
-            <!-- Dhanka Qoraalka -->
-            <div class="story-info">
-                <span class="sub-title">Our Journey</span>
-                <h2>How Everything Started</h2>
-                <p>Everything started with one simple idea in 2020: to make technology accessible to every Somali person from the comfort of their home.</p>
-                
-                <div class="milestones">
-                    <div class="milestone">
-                        <strong>2020</strong>
-                        <p>We started with a small office and two passionate individuals.</p>
-                    </div>
-                    <div class="milestone">
-                        <strong>2023</strong>
-                        <p>We became one of the leading electronic companies in the market.</p>
-                    </div>
-                </div>
-                
-                <p>Today, we proudly provide reliable services to hundreds of customers every day while bringing the latest technology products from around the world.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Qaybta Our Services -->
-<section class="services-section">
-    <div class="container">
-        <div class="section-header">
-           <span class="sub-title">Our Services</span>
-            <h2>What Can We Do For You?</h2>
-        </div>
-
-        <div class="services-grid">
-            <!-- Adeegga 1 -->
-            <div class="service-card">
-                <div class="service-icon">💻</div>
-                <h3>Laptop Sales</h3>
-                <p>We provide the latest laptops for programming, designing, office work, and gaming.</p>
-            </div>
-
-            <!-- Adeegga 2 -->
-            <div class="service-card">
-                <div class="service-icon">📱</div>
-                <h3>Mobile Devices</h3>
-                <p>Modern smartphones and high-quality accessories with warranty support.</p>
-            </div>
-
-            <!-- Adeegga 3 -->
-            <div class="service-card">
-                <div class="service-icon">🛠️</div>
-                <h3>Device Repair</h3>
-                <p>We offer fast and professional repair services handled by experienced technicians.</p>
-            </div>
-
-            <!-- Adeegga 4 -->
-            <div class="service-card">
-                <div class="service-icon">🌐</div>
-                <h3>Internet Installation</h3>
-                <p>We build reliable networking systems for homes and offices to keep you connected at all times..</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Qaybta Our Team -->
-<section class="team-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="sub-title">Our Experts</span>
-            <h2>Meet The Team</h2>
-        </div>
-
-        <div class="team-grid">
-            <!-- Xubin 1 -->
-            <div class="team-card">
-                <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Team Member">
-                </div>
-                <div class="member-info">
-                    <h3>Axmed Cali</h3>
-                    <span>Chief Executive Officer</span>
-                </div>
-            </div>
-
-            <!-- Xubin 2 -->
-            <div class="team-card">
-                <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Team Member">
-                </div>
-                <div class="member-info">
-                    <h3>Leyla Jaamac</h3>
-                    <span>Hardware Engineer</span>
-                </div>
-            </div>
-
-            <!-- Xubin 3 -->
-            <div class="team-card">
-                <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Team Member">
-                </div>
-                <div class="member-info">
-                    <h3>Mustafa Cumar</h3>
-                    <span>Marketing Manager</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-     <!-- foooter -->
-
-<!-- MAIN FOOTER SECTION -->
-<footer class="site-footer">
-    <div class="container footer-wrapper">
-        
-        <!-- Column 1: Brand Info -->
-        <div class="footer-column brand-info">
-            <div class="logo">
-                <a href="#home">Tech<span>Store</span></a>
-            </div>
-            <p>Waxaan kuu soo xulnaa qalabka elektaroonigga ah ee ugu tayada sarreeya adduunka. Kalsoonidaadu waa muhiimadayada.</p>
-        </div>
-
-        <!-- Column 2: Navigation Menu (Shaqaynaya) -->
-        <div class="footer-column">
-            <h4>Quick Links</h4>
-            <ul class="footer-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 3: Contact & Newsletter -->
-        <div class="footer-column">
-            <h4>Stay Connected</h4>
-            <div class="social-links">
-                <a href="#" title="Facebook">FB</a>
-                <a href="#" title="Instagram">IG</a>
-                <a href="#" title="Twitter">X</a>
-            </div>
-            <p class="email-text">📧 info@techstore.so</p>
-        </div>
-
-    </div>
-
-    <!-- Copyright Area -->
-    <div class="footer-bottom">
+    <!-- WHO WE ARE SECTION -->
+    <section class="who-we-are">
         <div class="container">
-            <p>&copy; 2026 TechStore. All Rights Reserved. Built with 💙</p>
+            <div class="about-flex">
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p>We are a team of tech experts specialized in delivering and installing high-quality electronic devices. Our mission is to connect modern technology with your everyday life seamlessly.</p>
+                    <p>Since our inception, we have served thousands of customers with authentic products ranging from laptops and smartphones to smartwatches and smart home power systems.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="TechStore Team Workspace">
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </section>
 
+    <!-- MISSION AND VISION SECTION -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div class="icon">🚀</div>
+                    <h3>Our Mission</h3>
+                    <p>To provide our customers with top-quality electronic products while ensuring excellent service, affordable prices, and 100% customer satisfaction.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">👁️</div>
+                    <h3>Our Vision</h3>
+                    <p>To become the leading technology destination for communities by driving innovation and making modern life easier through reliable tech solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY SECTION -->
+    <section class="our-story">
+        <div class="container">
+            <div class="story-wrapper">
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Our Journey">
+                </div>
+                
+                <div class="story-info">
+                    <span class="sub-title">Our Journey</span>
+                    <h2>How Everything Started</h2>
+                    <p>Everything started with one simple vision in 2020: to make authentic, world-class technology accessible to every individual from the comfort of their home.</p>
+                    
+                    <div class="milestones">
+                        <div class="milestone">
+                            <strong>2020</strong>
+                            <p>Started with a small office and two passionate tech engineers.</p>
+                        </div>
+                        <div class="milestone">
+                            <strong>2023</strong>
+                            <p>Expanded into a premier electronics provider serving thousands of tech enthusiasts.</p>
+                        </div>
+                    </div>
+                    
+                    <p>Today, we proudly provide reliable products and repair services to hundreds of satisfied customers every day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR SERVICES SECTION -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">Our Services</span>
+                <h2>What Can We Do For You?</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Laptop Sales</h3>
+                    <p>We provide the latest laptops for programming, designing, office work, and gaming.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Devices</h3>
+                    <p>Modern smartphones and high-quality accessories with official warranty support.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Device Repair</h3>
+                    <p>We offer fast and professional hardware repair services handled by certified technicians.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Internet & Smart Setup</h3>
+                    <p>We build reliable networking systems for homes and offices to keep you connected 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR EXPERTS TEAM SECTION -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">Our Experts</span>
+                <h2>Meet The Team</h2>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Axmed Cali">
+                    </div>
+                    <div class="member-info">
+                        <h3>Axmed Cali</h3>
+                        <span>Chief Executive Officer</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Leyla Jaamac">
+                    </div>
+                    <div class="member-info">
+                        <h3>Leyla Jaamac</h3>
+                        <span>Lead Hardware Engineer</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Mustafa Cumar">
+                    </div>
+                    <div class="member-info">
+                        <h3>Mustafa Cumar</h3>
+                        <span>Marketing & Customer Success</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container footer-wrapper">
+            <div class="footer-column brand-info">
+                <div class="logo">
+                    <a href="index.html">Tech<span>Store</span></a>
+                </div>
+                <p>Waxaan kuu soo xulnaa qalabka elektaroonigga ah ee ugu tayada sarreeya adduunka. Kalsoonidaadu waa muhiimadayada.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products Catalog</a></li>
+                    <li><a href="about.html">About Our Company</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Stay Connected</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="email-text">📧 info@techstore.so</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 TechStore. All Rights Reserved. Built with 💙</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Master JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>

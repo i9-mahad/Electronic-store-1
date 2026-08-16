@@ -3,358 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electro</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TechStore | Modern Electronics & Gadgets</title>
+    <meta name="description" content="Upgrade your digital lifestyle with the latest premium gadgets, laptops, smartphones, and smart home solutions at TechStore.">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Master CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <!-- MAIN HEADER SECTION -->
-<header class="site-header">
-    <div class="container header-wrapper">
-        
-        <!-- Logo -->
-        <div class="logo">
-            <a href="#">yaxye<span>Store</span></a>
-        </div>
-
-        <!-- Navigation Menu -->
-        <nav class="main-nav">
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <!-- Search and Cart Area -->
-        <div class="header-actions">
-            <div class="search-bar">
-                <input type="text" placeholder="Search products...">
-                <button type="submit" class="search-btn">🔍</button>
-            </div>
+    <header class="site-header">
+        <div class="container header-wrapper">
             
-            <a href="#" class="cart-icon">
-                <span class="icon">🛒</span>
-                <span class="cart-count">0</span>
-            </a>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">Tech<span>Store</span></a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search and Actions Area -->
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products..." aria-label="Search products">
+                    <button type="button" class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                
+                <a href="#" class="cart-icon" id="openCartBtn" aria-label="View Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
         </div>
-
-    </div>
-</header>
-
+    </header>
 
     <!-- HOME PAGE HERO SECTION -->
-<div class="home-hero">
-    <div class="container">
-        <div class="hero-wrapper">
-            <!-- Dhinaca Qoraalka -->
-            <div class="hero-text">
-                <span class="top-label">Welcome to TechStore</span>
-                <h1>Upgrade Your <span class="accent">Digital</span> Lifestyle</h1>
-                <p>Discover the latest in technology with our curated collection of premium gadgets. Quality, performance, and style delivered to your doorstep.</p>
-                
-                <div class="hero-btns">
-                    <button class="btn-main">Shop Now</button>
-                    <button class="btn-outline">View Catalog</button>
-                </div>
-
-                <div class="hero-features">
-                    <div class="feat-item"><span>✓</span> Free Shipping</div>
-                    <div class="feat-item"><span>✓</span> 24 Months Warranty</div>
-                </div>
-            </div>
-
-            <!-- Dhinaca Sawirka -->
-            <div class="hero-visual">
-                <div class="image-bg-blob"></div>
-                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80" alt="Premium Tech" class="main-hero-img">
-            </div>
-        </div>
-    </div>
-</div>
-
-   <!-- FEATURES SECTION -->
-<section class="features-section">
-    <div class="container">
-        <div class="features-wrapper">
-            
-            <!-- Feature 1 -->
-            <div class="feature-item">
-                <div class="f-icon">
-                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-                </div>
-                <div class="f-text">
-                    <h4>Free Shipping</h4>
-                    <p>Orders over $150</p>
-                </div>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="feature-item">
-                <div class="f-icon">
-                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                </div>
-                <div class="f-text">
-                    <h4>Secure Payment</h4>
-                    <p>100% Secure Transaction</p>
-                </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="feature-item">
-                <div class="f-icon">
-                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
-                </div>
-                <div class="f-text">
-                    <h4>Easy Returns</h4>
-                    <p>30 Days Return Policy</p>
-                </div>
-            </div>
-
-            <!-- Feature 4 -->
-            <div class="feature-item">
-                <div class="f-icon">
-                    <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                </div>
-                <div class="f-text">
-                    <h4>24/7 Support</h4>
-                    <p>Pro Tech Assistance</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-     <!-- shope by catagores -->
-
-     
-
-       
-
-     <!-- feuture products -->
-
-<!-- PREMIUM CATEGORIES SECTION -->
-<section class="premium-cats">
-    <div class="container">
-        <div class="cat-title-area">
-            <h2 class="main-title">Top Collections</h2>
-            <p>Select a category to find the best tech deals</p>
-        </div>
-
-        <div class="cat-grid-modern">
-            <!-- Category 1 -->
-            <div class="cat-glass-card">
-                <div class="cat-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Phones">
-                </div>
-                <div class="cat-details">
-                    <span class="cat-count">450+ Items</span>
-                    <h3>Smartphones</h3>
-                    <a href="#" class="cat-action-btn">Browse Now</a>
-                </div>
-            </div>
-
-            <!-- Category 2 -->
-            <div class="cat-glass-card active">
-                <div class="cat-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500&q=80" alt="Laptops">
-                </div>
-                <div class="cat-details">
-                    <span class="cat-count">280+ Items</span>
-                    <h3>Laptops & PC</h3>
-                    <a href="#" class="cat-action-btn">Browse Now</a>
-                </div>
-            </div>
-
-            <!-- Category 3 -->
-            <div class="cat-glass-card">
-                <div class="cat-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=500&q=80" alt="Tablets">
-                </div>
-                <div class="cat-details">
-                    <span class="cat-count">120+ Items</span>
-                    <h3>Tablets</h3>
-                    <a href="#" class="cat-action-btn">Browse Now</a>
-                </div>
-            </div>
-
-            <!-- Category 4 -->
-            <div class="cat-glass-card">
-                <div class="cat-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Audio">
-                </div>
-                <div class="cat-details">
-                    <span class="cat-count">300+ Items</span>
-                    <h3>Audio Gear</h3>
-                    <a href="#" class="cat-action-btn">Browse Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-     <!-- services -->
-      <section class="services-section">
-    <div class="container">
-        <h2 class="section-title">Our Services</h2>
-        <p class="section-subtitle">Premium electronic solutions tailored to your needs</p>
-
-        <div class="services-grid">
-            <!-- Service 1 -->
-            <div class="service-card">
-                <div class="icon">💻</div>
-                <h3>Laptop Repair</h3>
-                <p>Professional hardware and software troubleshooting for all major laptop brands.</p>
-            </div>
-
-            <!-- Service 2 -->
-            <div class="service-card">
-                <div class="icon">📱</div>
-                <h3>Mobile Services</h3>
-                <p>Screen replacements, battery upgrades, and systematic repairs for smartphones.</p>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="service-card">
-                <div class="icon">🔌</div>
-                <h3>Smart Home Setup</h3>
-                <p>Installation and configuration of smart devices and automated home systems.</p>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="service-card">
-                <div class="icon">⚡</div>
-                <h3>Power Solutions</h3>
-                <p>High-quality solar panel installations and backup power system maintenance.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
- <!-- testmonials -->
-  <section class="testimonials-section">
-    <div class="container">
-        <h2 class="section-title">What Our Clients Say</h2>
-        <p class="section-subtitle">Trusted by thousands of satisfied customers worldwide</p>
-
-        <div class="testimonials-grid">
-            <!-- Testimonial 1 -->
-            <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="feedback">"The laptop repair service was incredibly fast. My computer works better than ever. Highly recommended for any technical issues!"</p>
-                <div class="client-info">
-                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=0d6efd&color=fff" alt="Client">
-                    <div>
-                        <h4>John Doe</h4>
-                        <span>Business Owner</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="feedback">"I had a CCTV system installed in my office. The team was professional, and the integration with my phone is seamless."</p>
-                <div class="client-info">
-                    <img src="https://ui-avatars.com/api/?name=Sarah+Smith&background=0d6efd&color=fff" alt="Client">
-                    <div>
-                        <h4>Sarah Smith</h4>
-                        <span>Freelancer</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="testimonial-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="feedback">"Great experience buying solar solutions here. They explained everything clearly and the installation was very neat."</p>
-                <div class="client-info">
-                    <img src="https://ui-avatars.com/api/?name=Michael+Brown&background=0d6efd&color=fff" alt="Client">
-                    <div>
-                        <h4>Michael Brown</h4>
-                        <span>Homeowner</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-     <!-- FAQ -->
-
-     <section class="faq">
-  <h2>Frequently Asked Questions</h2>
-
-  <div class="faq-item">
-    <button class="faq-question">Sidee wax loo iibsadaa?</button>
-    <div class="faq-answer">
-      <p>Waxaad dooranaysaa product, kadibna riixdaa "Add to Cart" oo raac steps-ka.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">Ma jirtaa delivery?</button>
-    <div class="faq-answer">
-      <p>Haa, waxaan bixinaa delivery gudaha dalka oo dhan.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">Sidee lacagta loo bixiyaa?</button>
-    <div class="faq-answer">
-      <p>Waxaad ku bixin kartaa EVC Plus, Zaad ama Sahal.</p>
-    </div>
-  </div>
-</section>
-
-     <!-- foooter -->
-
-<!-- MAIN FOOTER SECTION -->
-<footer class="site-footer">
-    <div class="container footer-wrapper">
-        
-        <!-- Column 1: Brand Info -->
-        <div class="footer-column brand-info">
-            <div class="logo">
-                <a href="#home">Tech<span>Store</span></a>
-            </div>
-            <p>Waxaan kuu soo xulnaa qalabka elektaroonigga ah ee ugu tayada sarreeya adduunka. Kalsoonidaadu waa muhiimadayada.</p>
-        </div>
-
-        <!-- Column 2: Navigation Menu (Shaqaynaya) -->
-        <div class="footer-column">
-            <h4>Quick Links</h4>
-            <ul class="footer-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 3: Contact & Newsletter -->
-        <div class="footer-column">
-            <h4>Stay Connected</h4>
-            <div class="social-links">
-                <a href="#" title="Facebook">FB</a>
-                <a href="#" title="Instagram">IG</a>
-                <a href="#" title="Twitter">X</a>
-            </div>
-            <p class="email-text">📧 info@techstore.so</p>
-        </div>
-
-    </div>
-
-    <!-- Copyright Area -->
-    <div class="footer-bottom">
+    <section class="home-hero">
         <div class="container">
-            <p>&copy; 2026 TechStore. All Rights Reserved. Built with 💙</p>
+            <div class="hero-wrapper">
+                <!-- Text Column -->
+                <div class="hero-text">
+                    <span class="top-label">Welcome to TechStore</span>
+                    <h1>Upgrade Your <span class="accent">Digital</span> Lifestyle</h1>
+                    <p>Discover the latest in technology with our curated collection of premium gadgets. Quality, performance, and style delivered to your doorstep.</p>
+                    
+                    <div class="hero-btns">
+                        <a href="product.html" class="btn-main"><i class="fa-solid fa-bag-shopping"></i> Shop Now</a>
+                        <a href="product.html" class="btn-outline">View Catalog</a>
+                    </div>
+
+                    <div class="hero-features">
+                        <div class="feat-item"><span>✓</span> Free Express Shipping</div>
+                        <div class="feat-item"><span>✓</span> 24 Months Warranty</div>
+                        <div class="feat-item"><span>✓</span> 30-Day Returns</div>
+                    </div>
+                </div>
+
+                <!-- Visual Image Column -->
+                <div class="hero-visual">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80" alt="Premium Tech Workspace Laptop" class="main-hero-img">
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </section>
 
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-wrapper">
+                <div class="feature-item">
+                    <div class="f-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <div class="f-text">
+                        <h4>Free Shipping</h4>
+                        <p>On all orders over $150</p>
+                    </div>
+                </div>
 
+                <div class="feature-item">
+                    <div class="f-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="f-text">
+                        <h4>Secure Payment</h4>
+                        <p>100% Encrypted Transactions</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="f-icon"><i class="fa-solid fa-arrow-rotate-left"></i></div>
+                    <div class="f-text">
+                        <h4>Easy Returns</h4>
+                        <p>30 Days Return Guarantee</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="f-icon"><i class="fa-solid fa-headset"></i></div>
+                    <div class="f-text">
+                        <h4>24/7 Support</h4>
+                        <p>Pro Tech Support Assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP COLLECTIONS CATEGORIES SECTION -->
+    <section class="premium-cats">
+        <div class="container">
+            <div class="cat-title-area">
+                <h2 class="main-title">Top Collections</h2>
+                <p>Select a category to find the best tech deals</p>
+            </div>
+
+            <div class="cat-grid-modern">
+                <!-- Category 1: Smartphones -->
+                <div class="cat-glass-card" data-category="smartphones">
+                    <div class="cat-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Smartphones">
+                    </div>
+                    <div class="cat-details">
+                        <span class="cat-count">450+ Items</span>
+                        <h3>Smartphones</h3>
+                        <a href="product.html" class="cat-action-btn">Browse Now</a>
+                    </div>
+                </div>
+
+                <!-- Category 2: Laptops -->
+                <div class="cat-glass-card active" data-category="laptops">
+                    <div class="cat-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500&q=80" alt="Laptops & PC">
+                    </div>
+                    <div class="cat-details">
+                        <span class="cat-count">280+ Items</span>
+                        <h3>Laptops & PC</h3>
+                        <a href="product.html" class="cat-action-btn">Browse Now</a>
+                    </div>
+                </div>
+
+                <!-- Category 3: Tablets -->
+                <div class="cat-glass-card" data-category="tablets">
+                    <div class="cat-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=500&q=80" alt="Tablets">
+                    </div>
+                    <div class="cat-details">
+                        <span class="cat-count">120+ Items</span>
+                        <h3>Tablets</h3>
+                        <a href="product.html" class="cat-action-btn">Browse Now</a>
+                    </div>
+                </div>
+
+                <!-- Category 4: Audio Gear -->
+                <div class="cat-glass-card" data-category="audio">
+                    <div class="cat-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Audio Gear">
+                    </div>
+                    <div class="cat-details">
+                        <span class="cat-count">300+ Items</span>
+                        <h3>Audio Gear</h3>
+                        <a href="product.html" class="cat-action-btn">Browse Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Premium electronic solutions tailored to your needs</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">💻</div>
+                    <h3>Laptop Repair</h3>
+                    <p>Professional hardware and software troubleshooting for all major laptop brands.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">📱</div>
+                    <h3>Mobile Services</h3>
+                    <p>Screen replacements, battery upgrades, and systematic repairs for smartphones.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🔌</div>
+                    <h3>Smart Home Setup</h3>
+                    <p>Installation and configuration of smart devices and automated home systems.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">⚡</div>
+                    <h3>Power Solutions</h3>
+                    <p>High-quality solar panel installations and backup power system maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Trusted by thousands of satisfied customers worldwide</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="feedback">"The laptop repair service was incredibly fast. My computer works better than ever. Highly recommended for any technical issues!"</p>
+                    <div class="client-info">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&background=0f63e3&color=fff" alt="John Doe">
+                        <div>
+                            <h4>John Doe</h4>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="feedback">"I bought a high-performance smart watch and headphones here. Authentic quality, great warranty, and seamless customer care."</p>
+                    <div class="client-info">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+Smith&background=0f63e3&color=fff" alt="Sarah Smith">
+                        <div>
+                            <h4>Sarah Smith</h4>
+                            <span>Freelancer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="feedback">"Great experience buying solar solutions here. They explained everything clearly and the installation was very neat."</p>
+                    <div class="client-info">
+                        <img src="https://ui-avatars.com/api/?name=Michael+Brown&background=0f63e3&color=fff" alt="Michael Brown">
+                        <div>
+                            <h4>Michael Brown</h4>
+                            <span>Homeowner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button type="button" class="faq-question">Sidee wax loo iibsadaa?</button>
+            <div class="faq-answer">
+                <p>Waxaad dooranaysaa product-ka aad rabto, kadibna riix "Add to Cart" oo raac habka checkout-ka ee ku yaalla cart drawer-ka.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button type="button" class="faq-question">Ma jirtaa delivery gudaha dalka?</button>
+            <div class="faq-answer">
+                <p>Haa, waxaan bixinaa delivery degdeg ah oo la taageeray dhamaan gobollada iyo magaalooyinka dalka.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button type="button" class="faq-question">Sidee lacagta loo bixiyaa?</button>
+            <div class="faq-answer">
+                <p>Waxaad ku bixin kartaa EVC Plus, Zaad, Sahal ama Kaadhadhka Bangiga (Credit/Debit Card).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="container footer-wrapper">
+            
+            <div class="footer-column brand-info">
+                <div class="logo">
+                    <a href="index.html">Tech<span>Store</span></a>
+                </div>
+                <p>Waxaan kuu soo xulnaa qalabka elektaroonigga ah ee ugu tayada sarreeya adduunka. Kalsoonidaadu waa muhiimadayada.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products Catalog</a></li>
+                    <li><a href="about.html">About Our Company</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Stay Connected</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="email-text">📧 info@techstore.so</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 TechStore. All Rights Reserved. Built with 💙</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Master JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
